@@ -75,33 +75,38 @@ To run the analysis, follow these steps:
 ## Model Description
 The codebase includes 14 different models, each designed to handle various modalities in the context of measuring influencer emapthy:
 
- 1. **Unimodal (3 Models):**
-   - `A1_LSTM_Text.py`: LSTM model for text data.
-   - `A2_LSTM_Audio.py`: LSTM model for audio data.
-   - `A3_LSTM_Image.py`: LSTM model for image data.
+# Multimodal Fusion Models
 
-2. **Bimodal (3 Models):**
-   - `A4_EF_LSTM_Text#Audio.py`: Early Fusion LSTM for text and audio data.
-   - `A5_EF_LSTM_Text#Image.py`: Early Fusion LSTM for text and image data.
-   - `A6_EF_LSTM_Audio#Image.py`: Early Fusion LSTM for audio and image data.
+## 1. **Unimodal Models (3 Models)**
 
-3. **Trimodal (8 Models):**
-   - `A7_EF_LSTM_Text#Audio#Image.py`: Early Fusion LSTM for text, audio and image data.
-   - `A8_TFN_Text#Audio#Image.py`: TFN (Tensor Fusion Network) for text, audio and image data.
-   - `A9_LMF_Text#Audio#Image.py`: LMF (Low-rank Multimodal Fusion) for text, audio and image data.
-   - `A10_MFN_Text#Audio#Image.py`: MFN (Memory Fusion Network) for text, audio and image data.
-   - `A11_GMFN_noG.py`: Based on Gragh MFN, the DFG (Dynamic Fusion Graph) component is removed, disabling the graph learning mechanism. To evaluate the contribution of the DFG component to the dynamic modality information fusion in the Gragh MFN model.
-   - `A12_GMFN_noW.py`:Based on Gragh MFN, the dynamic temporal sequence features are eliminated, and only the static average features of each modality across the video duration are used. To validate the importance of temporal dynamics in Gragh MFN and compare their performance against static features.
-   - `A13_GMFN_noM.py`: Based on Gragh MFN, the cross-modal interaction module is removed, meaning the interactions between text, audio, and image modalities are no longer captured. To assess the impact of cross-modal interaction mechanisms on the performance of the Gragh MFN model.
-   - `A14_GMFN.py`: Graph MFN full model for text, audio and image data.
+- `A1_LSTM_Text.py`: LSTM model for text data.
+- `A2_LSTM_Audio.py`: LSTM model for audio data.
+- `A3_LSTM_Image.py`: LSTM model for image data.
+
+## 2. **Bimodal Models (3 Models)**
+
+- `A4_EF_LSTM_Text#Audio.py`: Early Fusion LSTM for text and audio data.
+- `A5_EF_LSTM_Text#Image.py`: Early Fusion LSTM for text and image data.
+- `A6_EF_LSTM_Audio#Image.py`: Early Fusion LSTM for audio and image data.
+
+## 3. **Trimodal Models (8 Models)**
+
+- `A7_EF_LSTM_Text#Audio#Image.py`: Early Fusion LSTM for text, audio, and image data.
+- `A8_TFN_Text#Audio#Image.py`: TFN (Tensor Fusion Network) for text, audio, and image data.
+- `A9_LMF_Text#Audio#Image.py`: LMF (Low-rank Multimodal Fusion) for text, audio, and image data.
+- `A10_MFN_Text#Audio#Image.py`: MFN (Memory Fusion Network) for text, audio, and image data.
+- `A11_GMFN_noG.py`: Gragh MFN without the DFG (Dynamic Fusion Graph) component, to evaluate its contribution to dynamic modality information fusion.
+- `A12_GMFN_noW.py`: Gragh MFN without dynamic temporal sequence features, only using static average features to validate the importance of temporal dynamics.
+- `A13_GMFN_noM.py`: Gragh MFN without the cross-modal interaction module, to assess the impact of cross-modal interaction mechanisms.
+- `A14_GMFN.py`: Full Gragh MFN model for text, audio, and image data.
 
 
-Each model is based on pretrained models and demonstrates the prediction results for different data modalities and fusion techniques. The models are specifically tailored for analyzing the influencer emapthy using multimodal data.
+Each model is based on pretrained models and demonstrates the prediction results for different data modalities . The models are specifically tailored for analyzing the influencer emapthy using multimodal data.
 
 
 
 ## Evaluation Metrics
-The code includes functions for evaluating the model performance:
+The code includes metrics for evaluating the model performance:
 - Accuracy
 - F1 Score
 - Mean Absolute Error (MAE)
