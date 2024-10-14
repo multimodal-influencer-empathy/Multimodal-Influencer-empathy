@@ -90,9 +90,9 @@ The codebase includes 14 different models, each designed to handle various modal
    - `A8_TFN_Text#Audio#Image.py`: TFN for text, audio and image data.
    - `A9_LMF_Text#Audio#Image.py`: LMF for text, audio and image data.
    - `A10_MFN_Text#Audio#Image.py`: MFN for text, audio and image data.
-   - `A11_GMFN_noG.py`: Graph MFN noG for text, audio and image data.
-   - `A12_GMFN_noW.py`: Graph MFN noG for text, audio and image data.
-   - `A13_GMFN_noM.py`: Graph MFN noG for text, audio and image data.
+   - `A11_GMFN_noG.py`: Graph MFN noG removes the DFG for text, audio and image data.
+   - `A12_GMFN_noW.py`: Graph MFN noW removes the dynamic sequence of inputs for text, audio and image data.
+   - `A13_GMFN_noM.py`: Graph MFN noM removes the component that captures the crossmodal interactions for text, audio and image data.
    - `A14_GMFN.py`: Graph MFN for text, audio and image data.
 
 
