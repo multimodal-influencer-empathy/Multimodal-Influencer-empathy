@@ -73,7 +73,7 @@ To run the analysis, follow these steps:
 - `pretrained_model`: Contains 14 pretrained models.
 
 ## Model Description
-The codebase includes 14 different models, each designed to handle various modalities and fusion techniques in the context of measuring influencer emapthy:
+The codebase includes 14 different models, each designed to handle various modalities in the context of measuring influencer emapthy:
 
  1. **Unimodal (3 Models):**
    - `A1_LSTM_Text.py`: LSTM model for text data.
