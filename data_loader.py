@@ -132,8 +132,6 @@ def MMDataLoader(args, num_workers=0):
     """
     # Create datasets for each split
     datasets = {
-        'train': MMDataset(args, mode='train'),
-        'valid': MMDataset(args, mode='valid'),
         'test': MMDataset(args, mode='test')
     }
 
