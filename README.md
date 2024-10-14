@@ -75,7 +75,7 @@ To run the analysis, follow these steps:
 ## Model Description
 The codebase includes 14 different models, each designed to handle various modalities in the context of measuring influencer emapthy:
 
-# Multimodal Fusion Models
+# Multimodal Models
 
 ## 1. **Unimodal Models (3 Models)**
 
