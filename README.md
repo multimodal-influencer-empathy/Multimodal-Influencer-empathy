@@ -90,10 +90,10 @@ The codebase includes 14 different models, each designed to handle various modal
    - `A8_TFN_Text#Audio#Image.py`: TFN for text, audio and image data.
    - `A9_LMF_Text#Audio#Image.py`: LMF for text, audio and image data.
    - `A10_MFN_Text#Audio#Image.py`: MFN for text, audio and image data.
-   - `A11_GMFN_noG.py`: Graph MFN noG removes the DFG for text, audio and image data.
-   - `A12_GMFN_noW.py`: Graph MFN noW removes the dynamic sequence of inputs for text, audio and image data.
-   - `A13_GMFN_noM.py`: Graph MFN noM removes the component that captures the crossmodal interactions for text, audio and image data.
-   - `A14_GMFN.py`: Graph MFN for text, audio and image data.
+   - `A11_GMFN_noG.py`: Graph MFN noG based on Graph MFN without the Dynamic Fusion Graph(DFG) component for text, audio and image data.
+   - `A12_GMFN_noW.py`: Graph MFN noW based on Graph MFN without the dynamic sequence of inputs for text, audio and image data.
+   - `A13_GMFN_noM.py`: Graph MFN noM based on Graph MFN without the component that captures the crossmodal interactions for text, audio and image data.
+   - `A14_GMFN.py`: Graph MFN full model for text, audio and image data.
 
 
 Each model is based on pretrained models and demonstrates the prediction results for different data modalities and fusion techniques. The models are specifically tailored for analyzing the influencer emapthy using multimodal data.
