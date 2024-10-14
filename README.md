@@ -75,17 +75,17 @@ To run the analysis, follow these steps:
 ## Model Description
 The codebase includes 14 different models, each designed to handle various modalities and fusion techniques in the context of measuring influencer emapthy:
 
- 1. ** Unimodal Data (3 Models):**
+ 1. **Unimodal (3 Models):**
    - `A1_LSTM_Text.py`: LSTM model for text data.
    - `A2_LSTM_Audio.py`: LSTM model for audio data.
    - `A3_LSTM_Image.py`: LSTM model for image data.
 
-2. ** Bimodal Data  (3 Models):**
+2. **Bimodal (3 Models):**
    - `A4_EF_LSTM_Text#Audio.py`: Early Fusion LSTM for text and audio data.
    - `A5_EF_LSTM_Text#Image.py`: Early Fusion LSTM for text and image data.
    - `A6_EF_LSTM_Audio#Image.py`: Early Fusion LSTM for audio and image data.
 
-3. **Trimodal Data (8 Models):**
+3. **Trimodal (8 Models):**
    - `A7_EF_LSTM_Text#Audio#Image.py`: Early Fusion LSTM for text, audio and image data.
    - `A8_TFN_Text#Audio#Image.py`: TFN (Tensor Fusion Network) for text, audio and image data.
    - `A9_LMF_Text#Audio#Image.py`: LMF (Low-rank Multimodal Fusion) for text, audio and image data.
