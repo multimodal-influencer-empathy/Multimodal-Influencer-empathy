@@ -87,12 +87,12 @@ The codebase includes 14 different models, each designed to handle various modal
 
 3. **Full Fusion + Trimodal Data (8 Models):**
    - `A7_EF_LSTM_Text#Audio#Image.py`: Early Fusion LSTM for text, audio and image data.
-   - `A8_TFN_Text#Audio#Image.py`: TFN for text, audio and image data.
-   - `A9_LMF_Text#Audio#Image.py`: LMF for text, audio and image data.
-   - `A10_MFN_Text#Audio#Image.py`: MFN for text, audio and image data.
-   - `A11_GMFN_noG.py`: Graph MFN noG based on Graph MFN without the Dynamic Fusion Graph(DFG) component for text, audio and image data.
-   - `A12_GMFN_noW.py`: Graph MFN noW based on Graph MFN without the dynamic sequence of inputs for text, audio and image data.
-   - `A13_GMFN_noM.py`: Graph MFN noM based on Graph MFN without the component that captures the crossmodal interactions for text, audio and image data.
+   - `A8_TFN_Text#Audio#Image.py`: TFN (Tensor Fusion Network) for text, audio and image data.
+   - `A9_LMF_Text#Audio#Image.py`: LMF (Low-rank Multimodal Fusion) for text, audio and image data.
+   - `A10_MFN_Text#Audio#Image.py`: MFN (Memory Fusion Network) for text, audio and image data.
+   - `A11_GMFN_noG.py`: Based on Gragh MFN, the DFG (Dynamic Fusion Graph) component is removed, disabling the graph learning mechanism. To evaluate the contribution of the DFG component to the dynamic modality information fusion in the Gragh MFN model.
+   - `A12_GMFN_noW.py`:Based on Gragh MFN, the dynamic temporal sequence features are eliminated, and only the static average features of each modality across the video duration are used. To validate the importance of temporal dynamics in Gragh MFN and compare their performance against static features.
+   - `A13_GMFN_noM.py`: Based on Gragh MFN, the cross-modal interaction module is removed, meaning the interactions between text, audio, and image modalities are no longer captured. To assess the impact of cross-modal interaction mechanisms on the performance of the Gragh MFN model.
    - `A14_GMFN.py`: Graph MFN full model for text, audio and image data.
 
 
